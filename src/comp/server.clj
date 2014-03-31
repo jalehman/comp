@@ -8,7 +8,7 @@
 
 (defn one-recipe-handler
   [req]
-  (ring.util.response/response (recipe/one (::web-app req) {})))
+  (ring.util.response/response "Testing testing..."))
 
 (defroutes app-routes
   (GET "/" req (one-recipe-handler req)))
